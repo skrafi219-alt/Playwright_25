@@ -5,10 +5,10 @@ import testdata from '../test-data/testdata.json';
 test("login TestCase", async ({page,loginPage})=>{
 
     
-    await page.goto("https://www.saucedemo.com/");
-    await loginPage.login(testdata.username,testdata.password);
+    await page.goto("https://rahulshettyacademy.com/client");
+    await loginPage.login_rahul(testdata.username_rehulshetty,testdata.password_rahulshetty);
     const title=await page.title();
     console.log(title);
-    await expect(page).toHaveTitle("Swag Labs");
+    await expect(page).toHaveTitle("Let's Shop");
     
 });
