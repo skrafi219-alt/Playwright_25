@@ -10,7 +10,8 @@ export default defineConfig({
   use:{
 
     browserName : 'chromium',
-    headless : false
+    headless : false,
+    baseURL : "https://rahulshettyacademy.com"
   }
   
 });
